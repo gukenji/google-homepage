@@ -10,6 +10,49 @@
       url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
   }
 
+
+body,ul,li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: arial,sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    padding: 6px;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+    font-size: 13px;
+    background-color: white;
+}
+
+.menu span{
+    padding: 10px;
+    padding-left: 10px;
+}
+
   .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -35,17 +78,82 @@
     font-feature-settings: 'liga';
   }
 
-.google-logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+.logotype{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: 15rem;
+
 }
+
+.logotype >img{
+    height: 100%;
+    margin-top: auto;
+    max-height: 92px;
+    position: relative;
+}
+
 .search-bar{
+    padding: 20px;
+    max-height: 160px;
+}
+
+.group-search-bar{
+    padding: 5px 8px 0 16px;
+    margin: 0 auto;
+    position: relative;
+    width: auto;
+    max-width: 600px;
+
+}
+
+.teste{
+    border: 1px solid #dfe1e5;
+    background: #fff;
     display: flex;
     align-items: center;
-    padding-right: 13px;
-    margin-top: -5px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    z-index: 3;
+    height: 33px;
+    width: auto;
+    margin: 0 auto;
 }
+
+.teste > input{
+    flex:1;
+    flex-wrap: wrap;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    height: 33px;
+    font-size: 16px;
+}
+.direita{
+    padding: 0px 6px 0px 0px;
+}
+.esquerda{
+    padding: 0px 6px 0px 0px;
+}
+
+#search-icon{
+    padding: 0 8px 0px 8px;
+}
+#keyboard{
+    padding: 0 8px 0px 8px;
+}
+#microphone{
+    padding: 0 8px 0px 8px;
+}
+
+
 .search-bar > input{
     background-color: transparent;
     /* border: none; */
@@ -107,6 +215,7 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding: 10px 0px 0px 0px;
 }
 
 .buttons > input{
