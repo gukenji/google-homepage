@@ -12,9 +12,13 @@
 
 body, html{
     height: 100%;
+    margin: 0px;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
 }
 
-body, ul,li{
+ul,li{
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -22,7 +26,9 @@ body, ul,li{
     font-family: arial,sans-serif;
 
 }
-
+p{
+    font-family: arial,sans-serif;
+}
 a{
     text-decoration: none;
 }
@@ -255,10 +261,11 @@ a{
     flex-wrap: wrap;
     align-items: center;
     background-color: #f2f2f2;
+    justify-content: space-evenly;
 }
 .options{
     display: flex;
-    padding: 3rem;
+    padding: 15px;
     flex-wrap: wrap;
 }
 
@@ -267,4 +274,16 @@ a{
     color: rgba(0,0,0,.54);
     font-size: 15px;
     
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+.footer {
+    justify-content: space-evenly;
+}
 }
